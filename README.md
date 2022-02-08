@@ -17,8 +17,8 @@ Dacon에서 진행된 [농업 환경 변화에 따른 작물 병해 진단 AI �
 
 
 ## preprocessing
-*1. image data
---> 
+* image
+** imageimage
 
 
 ## Training
