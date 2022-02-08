@@ -16,13 +16,20 @@ Dacon에서 진행된 [농업 환경 변화에 따른 작물 병해 진단 AI �
 * transformers==4.16.2
 
 
-## preprocessing
-* image
-** imageimage
+## Preprocessing(image)
+* Augmentations: Transpose, Flip, Rotate, RandomBrightnessContrast, Cutmix ...
 
+## Preprocessing(sequence)
+* Augmentations : 만약 길이가 500이상이라면 random으로 sampling(2씩)
+* MinMax Scaling
+
+## Model
+* resnext50_32x4d 
 
 ## Training
-* run train.ipynb 
+* K-fold Cross Validation(k=5)
+* Use Cutmix augmentation until epoch 15
+* Save model's weight when score is highest
 
 ## inference 
-* run inference.ipynb
+* K-fold Model Ensemble(Soft Voting)
