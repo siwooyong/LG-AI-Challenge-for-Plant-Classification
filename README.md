@@ -21,7 +21,7 @@ Dacon에서 진행된 [농업 환경 변화에 따른 작물 병해 진단 AI �
 * Augmentations: Transpose, Flip, Rotate, RandomBrightnessContrast, Cutmix ...
 
 ## Preprocessing(sequence)
-* Augmentations : 만약 길이가 500이상이라면 random으로 sampling(2씩)
+* Augmentations : 만약 길이가 400이상이라면 random으로 sampling(2씩)
 * MinMax Scaling
 
 ## Model
